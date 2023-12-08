@@ -6,7 +6,7 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:24:36 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/12/08 12:35:14 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/12/08 17:38:20 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ Cat::Cat(const Cat& src) : Animal(src)
 Cat& Cat::operator=(const Cat& src)
 {
 	this->type = src.type;
-	std::cout << "Cat copied" << std::endl;
+	std::cout << "Cat assigned" << std::endl;
 	return (*this);
 }
 
 Cat::~Cat()
 {
-	std::cout << "Cat destroyed" << std::endl;
+	std::cout << "Cat destructed" << std::endl;
 }
 
 std::string Cat::getType() const

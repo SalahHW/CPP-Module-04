@@ -6,7 +6,7 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 13:39:27 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/12/08 13:46:51 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/12/08 17:39:41 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ WrongCat::WrongCat(const WrongCat& src) : WrongAnimal(src)
 WrongCat& WrongCat::operator=(const WrongCat& src)
 {
 	this->type = src.type;
-	std::cout << "WrongCat copied" << std::endl;
+	std::cout << "WrongCat assigned" << std::endl;
 	return (*this);
 }
 
 WrongCat::~WrongCat()
 {
-	std::cout << "WrongCat destroyed" << std::endl;
+	std::cout << "WrongCat destructed" << std::endl;
 }
 
 const std::string& WrongCat::getType() const

@@ -6,7 +6,7 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 17:55:36 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/12/08 12:47:06 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/12/08 17:37:46 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@ Animal::Animal(const Animal& src)
 Animal& Animal::operator=(const Animal& src)
 {
 	this->type = src.type;
-	std::cout << "Animal copied" << std::endl;
+	std::cout << "Animal assigned" << std::endl;
 	return (*this);
 }
 
 Animal::~Animal()
 {
-	std::cout << "Animal destroyed" << std::endl;
+	std::cout << "Animal destructed" << std::endl;
 }
 
 const std::string& Animal::getType() const
