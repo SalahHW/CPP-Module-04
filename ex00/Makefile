@@ -6,7 +6,7 @@
 #    By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/08 12:03:30 by sbouheni          #+#    #+#              #
-#    Updated: 2023/12/08 12:34:35 by sbouheni         ###   ########.fr        #
+#    Updated: 2023/12/08 13:45:00 by sbouheni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,10 +19,14 @@ SRCS					=	source/main.cpp									\
 							include/Class/Animal/Animal.cpp					\
 							include/Class/Cat/Cat.cpp						\
 							include/Class/Dog/Dog.cpp						\
+							include/Class/WrongAnimal/WrongAnimal.cpp		\
+							include/Class/WrongCat/WrongCat.cpp				\
 
 HDRS					=	include/Class/Animal/Animal.hpp					\
 							include/Class/Cat/Cat.hpp						\
 							include/Class/Dog/Dog.hpp						\
+							include/Class/WrongAnimal/WrongAnimal.hpp		\
+							include/Class/WrongCat/WrongCat.hpp				\
 
 OBJS					=	$(SRCS:.cpp=.o)
 

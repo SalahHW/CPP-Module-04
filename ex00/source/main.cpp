@@ -6,13 +6,15 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:19:24 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/12/08 13:34:11 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/12/08 13:49:16 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Class/Animal/Animal.hpp"
 #include "../include/Class/Cat/Cat.hpp"
 #include "../include/Class/Dog/Dog.hpp"
+#include "../include/Class/WrongAnimal/WrongAnimal.hpp"
+#include "../include/Class/WrongCat/WrongCat.hpp"
 
 int	main(void)
 {
@@ -28,6 +30,12 @@ int	main(void)
 	delete meta;
 	delete i;
 	delete j;
+
+	const WrongAnimal *cat = new WrongCat();
+	std::cout << cat->getType() << " " << std::endl;
+	cat->makeSound();
+
+	delete cat;
 
 	return (0);
 }
