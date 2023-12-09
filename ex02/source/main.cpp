@@ -6,7 +6,7 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:19:24 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/12/09 01:41:48 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/12/09 01:55:18 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,11 @@ int	main(void)
 		std::cout << "Animal " << i << " : " << std::endl;
 		delete animals[i];
 	}
+
+	// Can't do that anymore
+	// Animal *animal = new Animal();
+	// animal->makeSound();
+	// delete animal;
 
 	return (0);
 }
