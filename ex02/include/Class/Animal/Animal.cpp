@@ -6,7 +6,7 @@
 /*   By: sbouheni <sbouheni@student.42mulhouse.fr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 17:55:36 by sbouheni          #+#    #+#             */
-/*   Updated: 2023/12/08 17:41:53 by sbouheni         ###   ########.fr       */
+/*   Updated: 2023/12/09 12:21:59 by sbouheni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ const std::string& Animal::getType() const
 	return (this->type);
 }
 
-void Animal::makeSound() const
-{
-	std::cout << "Animal sound" <<std::endl;
-}
+// void Animal::makeSound() const
+// {
+// 	std::cout << "Animal sound" <<std::endl;
+// }
